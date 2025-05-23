@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Gym Planner</title>
+  
+    <style>
+      section {
+        scroll-margin-top: 120px;
+      }
+
+      .gallery img {
+        max-width: 220px;
+        width: 100%;
+        border: 2px solid #ffaa00;
+        border-radius: 8px;
+      }
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #f1f1f1;
+    }
+    header {
+      background: #111;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #00aaff;
+    }
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffaa00;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #ffaa00;
+    }
+    .alt-title {
+      color: #00aaff;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      scroll-behavior: smooth;
+    }
+    .gallery img {
+      flex: 0 0 auto;
+      width: 300px;
+      height: auto;
+      border: 2px solid #ffaa00;
+      border-radius: 8px;
+    }
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      max-width: 300px;
+      width: 100%;
+      border: 2px solid #ffaa00;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    .contact-box {
+      background: #111;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .contact-box input, .contact-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #222;
+      border: 1px solid #555;
+      color: white;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .contact-box button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #00aaff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-box button:hover {
+      background: #008fcc;
+    }
+    @media (max-width: 700px) {
+      .gallery img {
+        max-width: 100%;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+
+    
+    <style>
+      section {
+        scroll-margin-top: 120px;
+      }
+
+      .gallery img {
+        max-width: 220px;
+        width: 100%;
+        border: 2px solid #ffaa00;
+        border-radius: 8px;
+      }
+        </style>
+    
+    <style>
+      nav a.active {
+        border-bottom: 2px solid #ffaa00;
+        padding-bottom: 2px;
+      }
+    </style>
+    </head>
+
+
+<body>
+
+<header>
+    <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="images/app-icon.png" alt="Weekly Gym Planner Logo" style="height: 40px; border-radius: 8px;">
+    <h1 style="margin: 0; font-size: 1.5rem; color: #00aaff;">Weekly Gym Planner</h1>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#support">Support</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About the App</h2>
+  <p>Take control of your fitness journey with <strong>Weekly Gym Planner</strong> — the ultimate app for seamless workout planning and progress tracking.</p>
+  <p>Whether you're just starting out or aiming to elevate your workout routine, Weekly Gym Planner empowers you to organize your weekly workouts, log your progress, and achieve your fitness goals — all without the hassle of ads, subscriptions, or hidden fees.</p>
+</section>
+
+<section id="features">
+  <h2 class="alt-title">App Features</h2>
+  <div class="gallery">
+    <img src="images/feature1.jpeg" alt="Feature 1">
+    <img src="images/feature2.jpeg" alt="Feature 2">
+    <img src="images/feature3.jpeg" alt="Feature 3">
+    <img src="images/feature4.jpeg" alt="Feature 4">
+    <img src="images/feature5.jpeg" alt="Feature 5">
+    <img src="images/feature6.jpeg" alt="Feature 6">
+    <img src="images/feature7.jpeg" alt="Feature 7">
+    <img src="images/feature8.jpeg" alt="Feature 8">
+
+  </div>
+</section>
+
+<section id="privacy" style="margin-top: 100px;">
+  <h2>Privacy Policy</h2>
+  <p>We don’t collect or track any personal information. The app works completely offline, without any ads, analytics, or hidden trackers. Your data stays private and local to your device.</p>
+</section>
+
+<section id="support">
+  <h2>Support</h2>
+  <p>If you need help, use the contact form below and we’ll get back to you:</p>
+  <form class="contact-box" onsubmit="return validateHoneypot()" action="https://formspree.io/f/xdkgvpar" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <button type="submit">Send</button>
+    
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Weekly Gym Planner · All rights reserved.
+</footer>
+
+
+<script>
+function validateHoneypot() {
+  const honeypot = document.querySelector('input[name="_gotcha"]');
+  if (honeypot && honeypot.value) {
+    return false; // silently block form submission
+  }
+  return true;
+}
+</script>
+
+<script>
+  // Highlight active nav item on scroll
+  
+  const sections = document.querySelectorAll("section");
+
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 120;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+<script>
+  // Highlight active nav item on scroll
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 120;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+</body>
+
+
+</html>
+
