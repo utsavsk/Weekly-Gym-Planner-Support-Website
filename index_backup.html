@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,21 @@
       --primary-blue: #00aaff;
       --primary-orange: #ffaa00;
       --dark-bg: #0a0a0a;
-      --section-bg: #111111;
+    <section<section id="support" class="fade-in">
+  <h2 class="secondary">Get Support</h2>
+  <p>Need help or have feedback? We're here for you! Use the contact form below and we'll get back to you as soon as possible:</p>
+  <form class="contact-box" onsubmit="return validateHoneypot()" action="https://formspree.io/f/xdkgvpar" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="4" placeholder="Tell us how we can help you..." required></textarea>
+    
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <button type="submit">Send Message</button>
+  </form>
+</section> class="fade-in">
+  <h2 class="primary">Your Privacy Matters</h2>
+  <p>We don't collect or track any personal information. The app works completely offline, without any ads, analytics, or hidden trackers. Your data stays private and secure on your device, giving you complete control over your fitness information.</p>
+</section>section-bg: #111111;
       --card-bg: #1a1a1a;
       --text-primary: #ffffff;
       --text-secondary: #cccccc;
@@ -409,6 +424,7 @@
   </style>
 </head>
 
+
 <body>
 
 <header>
@@ -445,27 +461,29 @@
   </div>
 </section>
 
-<section id="privacy" class="fade-in">
-  <h2 class="primary">Your Privacy Matters</h2>
-  <p>We don't collect or track any personal information. The app works completely offline, without any ads, analytics, or hidden trackers. Your data stays private and secure on your device, giving you complete control over your fitness information.</p>
+<section id="privacy" style="margin-top: 100px;">
+  <h2>Privacy Policy</h2>
+  <p>We don’t collect or track any personal information. The app works completely offline, without any ads, analytics, or hidden trackers. Your data stays private and local to your device.</p>
 </section>
 
-<section id="support" class="fade-in">
-  <h2 class="secondary">Get Support</h2>
-  <p>Need help or have feedback? We're here for you! Use the contact form below and we'll get back to you as soon as possible:</p>
+<section id="support">
+  <h2>Support</h2>
+  <p>If you need help, use the contact form below and we’ll get back to you:</p>
   <form class="contact-box" onsubmit="return validateHoneypot()" action="https://formspree.io/f/xdkgvpar" method="POST">
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" rows="4" placeholder="Tell us how we can help you..." required></textarea>
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
     
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-    <button type="submit">Send Message</button>
+    <button type="submit">Send</button>
+    
   </form>
 </section>
 
 <footer>
   &copy; 2025 Weekly Gym Planner · Built with passion for fitness enthusiasts
 </footer>
+
 
 <script>
 // Form validation
@@ -541,3 +559,4 @@ document.addEventListener('DOMContentLoaded', function() {
 </body>
 
 </html>
+
